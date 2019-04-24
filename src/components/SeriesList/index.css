@@ -1,0 +1,8 @@
+.series-list{
+    list-style-type: none;
+    color: red;
+}
+
+.series-list li a {
+    color: pink
+}
