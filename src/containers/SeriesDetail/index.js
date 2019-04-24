@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Loader from '../../components/Loader'
+import {Link} from 'react-router-dom'
 
 class SeriesDetail extends Component{
 
@@ -32,13 +33,18 @@ class SeriesDetail extends Component{
                 <p>Premiered - {show.premiered}</p>
                 <p>Rating - {show.rating.average}</p>
                 <p>Episodes - </p>
+                {
+                  show.image.medium
+                  &&    
                 <p>
                     <img
                     alt='Show image'
                     src={show.image.medium}></img>
                 </p>
+                }
             </div>
             }
+            <Link to={'/'}>Go back to all!</Link>
         </div>
         )
     }
